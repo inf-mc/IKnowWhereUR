@@ -19,7 +19,7 @@ public final class ServerEntry implements ModInitializer {
 			CommandDispatcher<ServerCommandSource> dispatcher,
 			CommandRegistryAccess registryAccess,
 			CommandManager.RegistrationEnvironment env) {
-		dispatcher.register(CommandManager.literal("l")
+		dispatcher.register(CommandManager.literal("w")
 			.executes(ctx -> {
 				var sb = new StringBuilder();
 				for (var pl: ctx.getSource().getServer().getPlayerManager().getPlayerList()) {
@@ -35,7 +35,7 @@ public final class ServerEntry implements ModInitializer {
 					sb.append(pl.getWorld().getRegistryKey().getValue());
 					sb.append('\n');
 				}
-				ctx.getSource().sendFeedback(Text.of(sb.toString()), false);
+				ctx.getSource().sendFeedback(() -> Text.of(sb.toString()), false);
 				return 1;
 			}));
 	}

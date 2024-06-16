@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "I Know Where U R",
-  "description": "List all players' location by /l command",
+  "description": "List all players' location by /w command",
   "authors": [
     "INF"
   ],
@@ -27,10 +27,10 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.14.19",
+    "fabricloader": ">=0.15.11",
     "fabric-api": "*",
-    "minecraft": "~1.19.4",
-    "java": ">=17"
+    "minecraft": "~1.21",
+    "java": ">=21"
   },
   "suggests": {
     "another-mod": "*"
