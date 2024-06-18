@@ -19,7 +19,7 @@ public final class ServerEntry implements ModInitializer {
 			CommandDispatcher<ServerCommandSource> dispatcher,
 			CommandRegistryAccess registryAccess,
 			CommandManager.RegistrationEnvironment env) {
-		dispatcher.register(CommandManager.literal("l")
+		dispatcher.register(CommandManager.literal("w")
 			.executes(ctx -> {
 				var sb = new StringBuilder();
 				for (var pl: ctx.getSource().getServer().getPlayerManager().getPlayerList()) {
