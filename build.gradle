@@ -80,8 +80,7 @@ publishing {
 loom {
 	runs {
 		server {
-			vmArgs "-Xms500M"
-			vmArgs "-Xmx800M"
+			runDir = "run/1.21"
 		}
 	}
 }
