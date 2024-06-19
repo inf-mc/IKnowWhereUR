@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.2-SNAPSHOT'
+	id 'fabric-loom' version '1.6-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -41,7 +41,7 @@ processResources {
 
 tasks.withType(JavaCompile).configureEach {
 	// Minecraft 1.18 (1.18-pre2) upwards uses Java 17.
-	it.options.release = 17
+	it.options.release = 21
 }
 
 java {
@@ -50,8 +50,8 @@ java {
 	// If you remove this line, sources will not be generated.
 	withSourcesJar()
 
-	sourceCompatibility = JavaVersion.VERSION_17
-	targetCompatibility = JavaVersion.VERSION_17
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
 }
 
 jar {
@@ -77,21 +77,10 @@ publishing {
 	}
 }
 
-/*
 loom {
 	runs {
-		client {
-			vmArgs "-Xmx=100K"
-		}
-
-		testClient {
-			inherit client
-		}
-
 		server {
-			vmArgs "-Xms500M"
-			vmArgs "-Xmx800M"
+			runDir = "run/1.19.4"
 		}
 	}
 }
-*/
