@@ -1,0 +1,4 @@
+This is a minecraft mod (fabric) enabling you to conveniently get all players' locations by /w command.
+
+By default, when executing this command, a 10s glow effect will be given to all players.
+You can change it in "config/ikwur/config.json".

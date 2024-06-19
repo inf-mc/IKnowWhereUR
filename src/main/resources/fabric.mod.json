@@ -4,13 +4,13 @@
   "version": "${version}",
 
   "name": "I Know Where U R",
-  "description": "List all players' location by /w command",
+  "description": "List all players' location by /w command.Check \"config/ikwur/config.json\" to customize config.",
   "authors": [
     "INF"
   ],
   "contact": {
     "homepage": "https://wiki.infinf.info/",
-    "sources": "https://wiki.infinf.info"
+    "sources": "https://github.com/inf-mc/IKnowWhereUR/tree/1.19.4"
   },
 
   "license": "MIT",
