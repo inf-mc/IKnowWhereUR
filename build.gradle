@@ -79,17 +79,8 @@ publishing {
 
 loom {
 	runs {
-		client {
-			vmArgs "-Xmx=100K"
-		}
-
-		testClient {
-			inherit client
-		}
-
 		server {
-			vmArgs "-Xms500M"
-			vmArgs "-Xmx800M"
+			runDir = "run/1.20.1"
 		}
 	}
 }
